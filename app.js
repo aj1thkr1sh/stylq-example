@@ -13,7 +13,7 @@ const express = require('express');
 const app = express();
 const stylq = require('stylq');
 const routesController = require('./controllers/routesController');
-//app.set('view engine','ejs');
+
 stylq.processAndSend('./preprocessor/index.stylq','./views/index.html');
 stylq.processAndSend('./preprocessor/about.stylq','./views/about.html');
 
