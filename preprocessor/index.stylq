@@ -1,12 +1,69 @@
 html{
     head{
         title{
-            The Page
+            Stlyq
         }
+        link rel="stylesheet" type="text/css" href="/assets/styles.css"
     }
     body{
-        h1{
-            The Home Page
+        h1 class="grand"{
+            STYLQ
+        }
+        div class="left-content floating-background"{
+          a href="/"{
+            Home
+          }
+        }
+        div class="right-content floating-background"{
+          a href="/about"{
+            About
+          }
+        }
+        h2 class="main-title"{
+          This WebSite is designed using Stylq
+        }
+        h2 class="sub-title"{
+          About Stylq
+        }
+        p class="description"{
+          Stylq is the cool syntax HTML Preprocessor. Stylq will allow user to make HTML file more easily. Stlyq is the Rich Syntax file to generator HTML file in the easy way. Stylq is the easy readable and writable.
+          br{}
+          Stylq also allows to use variable to reuse the tokens
+        }
+        h2 class="sub-title"{
+          Command Line Usage
+        }
+        p class="description"{
+
+          For
+          a href="https://www.npmjs.com/package/stylq"{
+            NPM
+          }
+          br{}
+          code{
+            npm i stylq
+          }
+          br{}
+          br{}
+          For
+          a href="https://yarnpkg.com/en/package/stylq"{
+            YARN
+          }
+          br{}
+          code{
+            yarn add stylq
+          }
+        }
+        h2 class="sub-title"{
+          Features
+        }
+        ul{
+          li{
+            1. Cool Syntax
+          }
+          li{
+            2. Usage of Variables
+          }
         }
     }
 }

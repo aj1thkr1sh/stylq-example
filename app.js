@@ -13,11 +13,12 @@ const express = require('express');
 const app = express();
 const stylq = require('stylq');
 const routesController = require('./controllers/routesController');
+const preprocessor = require('./preprocessor');
 
-stylq.processAndSend('./preprocessor/index.stylq','./views/index.html');
-stylq.processAndSend('./preprocessor/about.stylq','./views/about.html');
+preprocessor.make();
 
 app.use(express.static('./public'));
 routesController(app);
+
 app.listen(80);
 console.log('Server On......');

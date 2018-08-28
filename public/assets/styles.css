@@ -1,19 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Grand+Hotel');
+@import url('https://fonts.googleapis.com/css?family=Kumar+One+Outline');
+@import url('https://fonts.googleapis.com/css?family=Cabin|Inconsolata|Nunito|Nunito+Sans|Pacifico|Quicksand|Rubik|VT323');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+@import url('https://fonts.googleapis.com/css?family=Allerta');
+@import url('https://fonts.googleapis.com/css?family=Rambla');
+@import url('https://fonts.googleapis.com/css?family=Elsie');
+@import url('https://fonts.googleapis.com/css?family=Viga');
+@import url('https://fonts.googleapis.com/css?family=Skranji');
+@import url('https://fonts.googleapis.com/css?family=Marmelad');
+@import url('https://fonts.googleapis.com/css?family=Rosario');
 body{
-    background: #0d1521;
-    font-family: tahoma;
-    color: #989898;
+    background: #fbfbfb;
+    font-family: 'Oxygen', sans-serif;
+    color:  #3d3d3d;
 }
 
-input[type="text"]{
-    width: 70%;
-    padding: 20px;
-    background:#181c22;
-    border: 0;
-    float: left;
-    font-size: 20px;
-    color: #989898;
+h1.grand{
+  font-family: 'Rosario';
+  margin-top: 0px;
+  text-shadow: 4px 2px #ff0000;
+  text-align: center;
+  font-size: 80px;
+  background-color:  #47ddee;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white;
 }
 
+h2.main-title{
+  font-size: 40px;
+  text-align: center;
+}
+h2.sub-title{
+  text-align: left;
+  text-decoration: underline;
+  text-shadow: 1px 1px #47ddee;
+}
+p.description{
+  margin-left: 60px;
+  max-width: 100%;
+  font-size: 24px;
+}
+.floating-background{
+  border-bottom: 2px solid #47ddee;
+  border-radius: 6px;
+  transition-property: border-radius;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+  font-size: 25px;
+}
+.floating-background:hover {
+  border-bottom: 5px solid #47ddee;
+}
+.left-content{
+  float: left;
+  text-decoration: none;
+  transform: scale(1);
+  transition: all 0.2s ease-in-out 0.2s;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.left-content:hover{
+  position: relative;
+  padding-left: 25px;
+
+}
+.right-content{
+  float: right;
+  text-decoration: none;
+  transform: scale(1);
+  transition: all 0.2s ease-in-out 0.2s;
+}
+.right-content:hover{
+  position: relative;
+  padding-right: 25px;
+
+}
+@media only screen and (max-width: 600px) {
+    p.description{
+        margin-left: 0px;
+    }
+}
 button{
     padding: 20px;
     width: 30%;
@@ -28,27 +101,10 @@ button{
 
 ul{
     list-style-type: none;
-    padding: 0;
-    margin: 0;
 }
 
 li{
     width: 100%;
     padding: 20px;
-    box-sizing: border-box;
-    font-family: arial;
-    font-size: 20px;
-    cursor: pointer;
     letter-spacing: 1px;
-}
-
-li:hover{
-    text-decoration: line-through;
-    background: rgba(0,0,0,0.2);
-}
-
-h1{
-    background: url(./logo.png) no-repeat center;
-    margin-bottom: 0;
-    text-indent: -10000px;
 }
